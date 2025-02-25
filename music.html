@@ -2,7 +2,7 @@
 
 <!--
 	Prototype website
-	index.html
+	music.html
 -->
 
 <html>
@@ -14,17 +14,18 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 
-    <body class="homepage is-preload">
+    <body class="comics is-preload">
 		<div id="page-wrapper">
 			
 			<!--Header-->
 			<div id="header">
-				<header>
-					<h1><a href="index.html" id="logo">LOGO</a></h1>
-					<hr />
-					
-				</header>
-			
+
+                <!-- Inner -->
+                    <div class="inner">
+                        <header>
+                            <h1><a href="index.html" id="logo">LOGO</a></h1>
+                        </header>
+                    </div>
 
 				<!--Navigator-->
 				<nav id="nav">
@@ -46,17 +47,42 @@
 						<li><button class="link" onclick="window.location.href='about.html';">About</button></li>
 					</ul>
 				</nav>
-			</div>
+                
+			</div>	
 
-
+            <!-- Main -->
 			<div class="container">
-				<img src="assets/images/banner.jpg">
-			</div>
-			
-			<hr>
-			<div class="footer">
-				Footer may contain informations on contacts, copyright, etc. 
+				<article id="main" class="special">
+
+                    <header>
+                        <h2>Music</h2>
+                    </header>  
+                    
+                    <!-- <img src="assets/images/wallpaper.jpg" alt="" />   -->
+					<p>Paragraphs on music. </p>
+					
+					<section>
+						<header>
+							<h3>Albums</h3>
+						</header>
+						<audio controls autoplay loop>
+							<source src="assets/audio/lost in paradise.mp3" type="audio/mpeg">
+							Your browser does not support the audio element.
+						</audio>
+					</section>
+
+					<section>
+						<header>
+							<h3>Playlists</h3>
+						</header>
+						<p>
+							Something. 
+						</p>
+					</section>
+                    
+				</article>
 			</div>
 		</div>
 	</body>
+
 </html>

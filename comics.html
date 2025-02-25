@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+
+<!--
+	Prototype website
+	comics.html
+-->
+
+<html>
+	<head>
+		<title>Prototype</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script defer src="assets/js/comics.js"></script>
+	</head>
+
+    <body class="comics is-preload">
+			
+		<!--Header-->
+		<div id="header">
+			<header>
+				<h1><a href="index.html" id="logo">LOGO</a></h1>
+				
+			</header>
+		
+
+			<!--Navigator-->
+			<nav id="nav">
+				
+				<ul>
+					<li><button class="link" onclick="window.location.href='index.html';">Home</button></li>
+					<li>
+						<div class="dropdown">
+							<button class="link" onclick="window.location.href='comics.html';">Comics</button>
+							<!-- <div class="dropdown-menu">
+								Dropdown content. 
+							</div> -->
+						</div>
+					</li>
+
+					<li><button class="link" onclick="window.location.href='animations.html';">Animations</button></li>
+					<li><button class="link" onclick="window.location.href='music.html';">Music</button></li>
+					<li><button class="link" onclick="window.location.href='shop.html';">Shop</button></li>
+					<li><button class="link" onclick="window.location.href='about.html';">About</button></li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- Main -->
+		<div id="comics-list" class="comics-pages snaps-inline"></div>
+
+	</body>
+
+</html>
