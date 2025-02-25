@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", async () => {
     const comicsContainer = document.getElementById("comics-list");
 
-    const response = await fetch("../data/comics.json");
+    const response = await fetch("./data/comics.json");
     const data = await response.json()
 
     data.comics.forEach(comic => {
