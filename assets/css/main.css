@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #777
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    position: relative;
+    background-color: #3c494e;
+    margin: 0;
+}
+
+#nav {
+    position: relative;
+    /* top: 0; */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0.5em 0 0.5em 0;
+    z-index: 1;
+    overflow: hidden;
+    background-color: #3c494e;
+}
+
+#nav > ul {
+    line-height: 0px;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    height: 21px;
+    border-left: solid 1px rgba(192, 192, 192, 0.35);
+    border-right: solid 1px rgba(192, 192, 192, 0.35);
+}
+
+
+#nav > ul > li {
+    display: inline-block;
+    margin: -9px 0.5em 0 0.5em;
+    border-radius: 0.5em;
+    padding: .85em;
+    border: solid 1px transparent;
+    -moz-transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+    -webkit-transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+    -ms-transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+    transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+}
+
+.container > img {
+    size: 10%;
+}
+
+.link {
+    background: none;
+    border:none;
+    text-decoration: none;
+    color:#4dabd3;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+
+.link:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+/* Dropdown menus */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: calc(100% + .25rem);
+    background-color: white;
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+}
+
+
+/* comics */
+.comics {
+    background-color: antiquewhite;
+}
+
+.img__img{
+    
+    width: 70%;
+    height: auto;
+    display: block;
+    inline-size: 90%;
+    aspect-ratio: 9 / 14;
+}
+
+.comics-pages {
+    margin-left: 10%;
+    margin-top: 3%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+    display: grid;
+    /* gap: var(--size-1); */
+    grid-auto-flow: column;
+    grid-auto-columns: 35%;
+    
+    overflow-x: auto;
+}
+
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+}
+
+.snaps-inline > * {
+    scroll-snap-align: start;
+}
+
+
+.img__wrap {
+    position: relative;
+    height: 100%;
+    width: 100%; 
+    overflow: hidden;
+}
+
+.img__description {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(18, 36, 47, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    text-align:center;
+    
+
+    transition: opacity .2s, visibility .2s
+    
+}
+
+
+.img__wrap:hover .img__description {
+    visibility: visible;
+    opacity: 1;
+}

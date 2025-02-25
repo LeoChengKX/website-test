@@ -1,0 +1,44 @@
+{
+    "comics": [
+      {
+        "id": "comic1",
+        "title": "Comic 1 Title",
+        "cover": "assets/images/comics/comic1/comics_cover_1.jpg",
+        "pages": [
+          "assets/images/comics/comic1/comics_cover_1.jpg",
+          "assets/images/comics/comic1/page2.jpg"
+        ],
+        "description": "This is a description for comic1."
+      },
+      {
+        "id": "comic2",
+        "title": "Comic 2 Title",
+        "cover": "assets/images/comics/comic2/comics_cover_2.jpg",
+        "pages": [
+          "assets/images/comics/comic2/page1.jpg",
+          "assets/images/comics/comic2/page2.jpg"
+        ],
+        "description": "This is a description for comic2."
+      },
+      {
+        "id": "comic3",
+        "title": "Comic 3 Title",
+        "cover": "assets/images/comics/comic3/comics_cover_3.jpg",
+        "pages": [
+          "assets/images/comics/comic3/page1.jpg",
+          "assets/images/comics/comic3/page2.jpg"
+        ],
+        "description": "This is a description for comic3."
+      },
+      {
+        "id": "comic4",
+        "title": "Comic 3 Title",
+        "cover": "assets/images/comics/comic4/comics_cover_4.jpg",
+        "pages": [
+          "assets/images/comics/comic4/page1.jpg",
+          "assets/images/comics/comic4/page2.jpg"
+        ],
+        "description": "This is a description for comic4."
+      }
+    ]
+  }
